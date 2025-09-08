@@ -1,0 +1,244 @@
+/* Reset + Font */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Gilroy', sans-serif; background: #000; color: #fff; line-height: 1.6; overflow-x: hidden; }
+.container { max-width: 1200px; margin: auto; padding: 3rem 20px; }
+
+/* Animations */
+.fade-in { animation: fadeIn 1.5s ease-in-out; }
+.slide-up { animation: slideUp 1.5s ease-in-out; }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes slideUp { from {transform:translateY(40px); opacity:0;} to {transform:translateY(0); opacity:1;} }
+
+/* Navbar */
+.navbar { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.85); padding: 1rem 0; z-index: 1000; backdrop-filter: blur(8px); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; width: 90%; margin: auto; }
+.nav-logo a { font-size: 1.8rem; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: 1px; }
+.nav-menu { display: flex; gap: 2rem; }
+.nav-link { color: #fff; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+.nav-link:hover { color: #ff6a00; }
+
+/* Sections */
+.section-dark { background: #000; padding: 6rem 0; }
+.section-gradient { background: linear-gradient(135deg, #000 0%, #1a1a1a 40%, #ff0000 70%, #ff6a00 100%); padding: 6rem 0; }
+
+/* Titles */
+.section-title { font-size: 3rem; font-weight: 900; text-align: center; margin-bottom: 2.5rem; letter-spacing: 1px; }
+
+/* Hero */
+.hero { text-align: center; color: #fff; padding-top: 8rem; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.hero-title { font-size: 4rem; font-weight: 900; line-height: 1.2; }
+.highlight { background: linear-gradient(90deg, #ff0000, #ff6a00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-subtitle { font-size: 1.7rem; margin: 1rem 0; color: #ddd; }
+.hero-description { max-width: 650px; margin: 0 auto 2rem; color: #bbb; font-size: 1.1rem; }
+.hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+/* About */
+.about-card { background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+.about-text { font-size: 1.05rem; color: #ccc; margin-bottom: 1rem; line-height: 1.8; }
+
+/* Skills */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 1.5rem; }
+.skill-card { padding: 1.5rem; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.glass-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+.skill-card:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(255,90,0,0.3); }
+
+/* Projects */
+.projects-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.project-card { padding: 1.5rem; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.hover-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+.hover-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 8px 25px rgba(255,90,0,0.4); }
+.project-card a { color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s ease; }
+.project-card a:hover { color: #ff6a00; }
+
+/* Certifications */
+.timeline-item { margin-bottom: 2rem; padding: 1.5rem; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.timeline-item:hover { transform: translateY(-6px); box-shadow: 0 6px 20px rgba(255,90,0,0.3); }
+
+/* Buttons */
+.btn {
+  display: inline-block; padding: 0.9rem 1.8rem;
+  background: linear-gradient(90deg,#ff0000,#ff6a00);
+  color: #fff; font-weight: 700; text-decoration: none;
+  border-radius: 14px; box-shadow: 0 6px 15px rgba(255,80,0,0.4);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(90deg,#ff3300,#ff8000);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255,90,0,0.6);
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255,90,0,0.4);
+}
+
+.contact-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6a00;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Darker Button Variant */
+.btn-dark {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(90deg, #222, #444);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background: linear-gradient(90deg, #111, #333);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Primary Buttons (Resume, Contact Me, Certificates, etc.) */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(90deg,#ff3c00,#ff6a00);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 15px rgba(255,80,0,0.4);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(90deg,#ff4500,#ff7a00);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255,90,0,0.6);
+  border: 2px solid #ff6a00;
+}
+
+/* Dark Buttons (GitHub, LinkedIn, Contact Tabs) */
+.btn-dark {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(90deg,#1a1a1a,#333);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 14px;
+  border: 2px solid #ff6a00;   /* orange outline for contrast */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+.btn-dark:hover {
+  background: linear-gradient(90deg,#000,#222);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255,100,0,0.7);
+  color: #ffcc99; /* text glow for hover */
+}
+/* Dark Glass Effect for Cards */
+.glass-card,
+.project-card,
+.timeline-item,
+.contact-card {
+  background: rgba(20, 20, 20, 0.6); /* darker glass */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 106, 0, 0.4); /* subtle orange border */
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover,
+.project-card:hover,
+.timeline-item:hover,
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255,90,0,0.5);
+}
+
+/* Contact card tweaks */
+.contact-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6a00;
+}
+.contact-card p {
+  font-size: 1rem;
+  color: #eee; /* brighter text for readability */
+  margin-bottom: 1rem;
+}
+/* Smooth section blending */
+.section-dark {
+  background: #000;
+  padding: 6rem 0;
+  position: relative;
+}
+
+.section-gradient {
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 30%, #ff0000 70%, #ff6a00 100%);
+  padding: 6rem 0;
+  position: relative;
+}
+
+/* Transition overlay at the bottom of each section */
+.section-dark::after,
+.section-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+}
+
+/* Dark → Gradient smooth fade */
+.section-dark::after {
+  background: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Gradient → Dark smooth fade */
+.section-gradient::after {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 100%);
+}
+
+/* Footer */
+.footer { text-align: center; padding: 2rem; background: #000; font-size: 0.9rem; color: #777; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.8rem; }
+  .hero-subtitle { font-size: 1.2rem; }
+  .section-title { font-size: 2.2rem; }
+  .about-text { font-size: 0.95rem; }
+}
+@media (max-width: 480px) {
+  .nav-menu { display: none; }
+  .hero-title { font-size: 2.2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .about-text { font-size: 0.9rem; }
+}
