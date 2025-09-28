@@ -6,6 +6,9 @@
     --dsalmon: #361a17;
     --dcyan: #15272b;
 }
+body{
+    transition: background-color ease-out .5s;
+}
 
 .vdodiv{
     clip-path: circle(var(--clip) at 50% 50%);
