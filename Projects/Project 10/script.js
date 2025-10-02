@@ -124,7 +124,27 @@ function bodycolorChange(){
 })
 
 }
+function cards(){
+    gsap.set('.purpose-box', {
+    scale: 0.85,
+    opacity: 0
+});
 
+gsap.to('.purpose-box', {
+    scale: 1,
+    opacity: 1,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: 'none', 
+    scrollTrigger: {
+        trigger: '.cards',
+        start: 'top 80%',
+        end: 'bottom 50%', 
+        scrub: 0.5, 
+        toggleActions: 'play reverse play reverse'
+    }
+});
+}
 loco();
 homepageAnimation();
 realpageAnimation();
@@ -132,3 +152,4 @@ teamAnimation();
 paraAnimation();
 capsulesAnimation();
 bodycolorChange();
+cards();
