@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @font-face {
   font-family: 'Pp Neue Machina';
-  src: url('/Fonts/pp_neue/PPNeueMachina-Light.otf') format('opentype'),
-       url('/Fonts/pp_neue/PPNeueMachina-Regular.otf') format('opentype'),
-       url('/Fonts/pp_neue/PPNeueMachina-Ultrabold.otf') format('opentype');
+  src: url('pp_neue/PPNeueMachina-Light.otf') format('opentype'),
+       url('pp_neue/PPNeueMachina-Regular.otf') format('opentype'),
+       url('pp_neue/PPNeueMachina-Ultrabold.otf') format('opentype');
 }
 
 :root{
