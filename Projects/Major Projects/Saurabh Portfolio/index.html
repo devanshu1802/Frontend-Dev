@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <img class="image-gradient" src="gradient.png" alt="gradient">
     <div class="layer-blur"></div>
     <div class="container">
         <header>
-            <h1 class="logo">Saurabh</h1>
+            <h1 data-aos="fade-down" data-aos-duration="['1500']" class="logo">Devanshu</h1>
             <nav>
-                <a href="#">COMPANY</a>
-                <a href="#">FEATURES</a>
-                <a href="#">RESOURCES</a>
-                <a href="#">DOCS</a>
+                <a data-aos="fade-down" data-aos-duration="['1500']" href="#">COMPANY</a>
+                <a data-aos="fade-down" data-aos-duration="['2000']" href="#">FEATURES</a>
+                <a data-aos="fade-down" data-aos-duration="['2500']" href="#">RESOURCES</a>
+                <a data-aos="fade-down" data-aos-duration="['3000']" href="#">DOCS</a>
             </nav>
 
-            <button class="btn-signing">SIGNING</button>
+            <button data-aos="fade-down" data-aos-duration="['1500']" class="btn-signing">SIGNING</button>
         </header>
         <main>
             <div class="content">
-            <div class="tag-box">
-                <div class="tag">INTRODUCING &wedbar;</div>
+                <div class="tag-box">
+                    <div class="tag">INTRODUCING &wedbar;</div>
+                </div>
+
+                <h1>INTERACTIVE PAGES FOR<br>DEVELOPERS</h1>
+
+                <p class="description">
+                    The best way to reach Humans instead of outdated looks, delivering transactional and marketing
+                    front-end work at
+                    scale.
+                </p>
+
+                <div class="buttons">
+                    <a href="#" class="btn-get-started">DOCUMENTATION &gt;</a>
+                    <a href="#" class="btn-signing-main">Get Started &gt;</a>
+                </div>
             </div>
-
-            <h1>EMAIL FOR<br>DEVELOPERS</h1>
-
-            <p class="description">
-                The best way to reach Humans instead of spam folders, deliver transactional and marketing emails at scale.
-            </p>
-
-            <div class="buttons">
-                <a href="#" class="btn-get-started">DOCUMENTATION &gt;</a>
-                <a href="#" class="btn-signing-main">Get Started &gt;</a>
-            </div>
-        </div>
         </main>
+        <spline-viewer class="robot-3d"
+            url="https://prod.spline.design/GzAB326YIorVEodt/scene.splinecode"></spline-viewer>
+
     </div>
-    
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.76/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
