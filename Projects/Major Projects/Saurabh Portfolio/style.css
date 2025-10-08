@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @font-face {
   font-family: 'Pp Neue Machina';
-  src: url('pp_neue/PPNeueMachina-Light.otf') format('opentype'),
-       url('pp_neue/PPNeueMachina-Regular.otf') format('opentype'),
-       url('pp_neue/PPNeueMachina-Ultrabold.otf') format('opentype');
+  src: url('pp_neue/PPNeueMachina-Light.otf') format('opentype')
 }
 *{
     margin: 0;
@@ -51,7 +49,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    z-index: 999;
 }
 header h1{
     margin: 0;
@@ -70,6 +67,8 @@ nav a{
     transition: color 0.2s ease;
     text-decoration: none;
     color: inherit;
+    z-index: 999;
+
 }
 nav a:hover{
     color: #a7a7a7;
@@ -84,6 +83,8 @@ nav a:hover{
     font-weight: 500;
     transition: background-color 0.2sec ease;
     cursor: pointer;
+    z-index: 999;
+
 }
 .btn-signing:hover{
     background-color: white;
